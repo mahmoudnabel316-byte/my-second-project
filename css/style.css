@@ -67,9 +67,11 @@ h1{
     color: yellow;
   }
   .img{
-    height: 800px;
+    height: 500px;
+    width: 100
   }
   optgroup{
     background-color: brown;
     color: aliceblue;
+
   }
