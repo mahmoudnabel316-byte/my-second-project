@@ -75,4 +75,50 @@ h1{
     color: aliceblue;
 
   }
+/* تنسيقات الموبايل - ستعمل على أي شاشة أصغر من 768 بكسل */
+@media screen and (max-width: 767px) {
+    
+    /* جعل الصفحة مرنة */
+    html, body {
+        overflow-x: hidden; /* لمنع الحركة الجانبية المزعجة */
+        width: 100% !important;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* إصلاح النصوص المتداخلة في اليسار (كما في الصورة) */
+    body * {
+        text-align: center !important; /* توسيط كل النصوص */
+        float: none !important;        /* إلغاء أي تحجيم لليسار */
+        position: static !important;   /* إلغاء المواقع الثابتة */
+    }
+
+    /* تكبير الفورم (الجدول الأخضر في صورتك) ليناسب الشاشة */
+    table, form, div {
+        width: 95% !important;
+        margin: 10px auto !important;
+        display: block !important;
+    }
+
+    input, select {
+        width: 90% !important;
+        height: 40px !important; /* تسهيل الضغط للأصابع */
+        margin: 5px 0 !important;
+    }
+
+    /* جعل الصورة تأخذ عرض الشاشة */
+    img {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    /* إصلاح الأزرار (WhatsApp / Contact) */
+    .buttons, button, a {
+        display: inline-block !important;
+        width: auto !important;
+        padding: 10px 20px !important;
+        margin: 5px !important;
+    }
+}
+
 
