@@ -1,0 +1,75 @@
+body{
+    background-color: aqua;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.my-name{
+    color: rgb(226, 8, 8);
+    font-size: 40px;
+}
+h1{
+    background-color: blue;
+    margin-left: 750px;
+    margin-right: 750px;
+    padding-left: 30px;
+    border: 10px double black;
+    border-radius: 40px;
+    text-shadow: 1px 1px 0 white;
+    font-size: 30px;
+  
+}
+.p{
+    color: rgb(7, 11, 247);
+    font-size: large;
+    text-align: center;   
+
+}
+ .why{
+    color: blueviolet;
+     background-color: rgba(11, 7, 19, 0.651);
+    border-bottom: 7PX solid black;
+    margin-right: 1400px;
+    padding-left: 4px;
+    padding-top: 2px;
+    border-radius: 10px;
+   text-transform: uppercase;
+
+}
+.ul{
+    color:blueviolet ;
+    background-color: #EEE;
+    margin-right: 1500px;
+    border-radius: 20px;
+     line-height: 1.6;
+     list-style-type:upper-roman;
+
+}
+.footer{
+    background-color: rgba(11, 7, 19, 0.651);
+    color: white;
+    text-align: center;
+}
+   .link a{
+    text-decoration: none;
+    background-color: brown;
+    padding: 10px;
+    border: 2px ;
+    color: aliceblue;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    display: inline-block;
+  }
+  a:hover{
+    color: blueviolet;
+  }
+  ::selection{
+    background-color: black;
+    color: yellow;
+  }
+  .img{
+    height: 800px;
+  }
+  optgroup{
+    background-color: brown;
+    color: aliceblue;
+  }
