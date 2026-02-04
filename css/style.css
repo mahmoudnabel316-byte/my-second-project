@@ -1,6 +1,11 @@
 body{
-    background-color: aqua;
+    background-color: rgb(65, 88, 88);
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 20px;
+  }
+audio{
+   z-index: 999;
+   margin-top: 15px;
 }
 .my-name{
     color: rgb(226, 8, 8);
@@ -38,10 +43,11 @@ h1{
     color:blueviolet ;
     background-color: #EEE;
     margin-right: 1500px;
-    border-radius: 20px;
+    border-bottom-right-radius: 40px;
+    border-top-left-radius: 40px;
      line-height: 1.6;
-     list-style-type:upper-roman;
-
+     list-style:none;
+     box-shadow: 10px 10px 10px  grey ;
 }
 .footer{
     background-color: rgba(11, 7, 19, 0.651);
@@ -73,5 +79,21 @@ h1{
   optgroup{
     background-color: brown;
     color: aliceblue;
+  }
+  nav {
+    background-color: brown;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 5px 4px 5px grey;
+    z-index: 1000;
+  }
+  nav a {
+    color: aliceblue;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 20px;
 
   }
