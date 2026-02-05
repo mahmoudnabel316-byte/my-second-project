@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 body{
     background-color: rgb(65, 88, 88);
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -29,7 +32,7 @@ h1{
 
 }
  .why{
-    color: blueviolet;
+    color: rgb(124, 52, 218);
      background-color: rgba(11, 7, 19, 0.651);
     border-bottom: 7PX solid black;
     margin-right: 1400px;
@@ -52,8 +55,14 @@ h1{
 .footer{
     background-color: rgba(11, 7, 19, 0.651);
     color: white;
-    text-align: center;
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3px;
+    background-image:linear-gradient(to right, #00000036 30%, #8b0000 );
+    caret-color: red;
+  }
    .link a{
     text-decoration: none;
     background-color: brown;
@@ -75,7 +84,15 @@ h1{
   .img{
     height: 500px;
     width: 1000px;
-  }
+    filter: grayscale(100%);
+    -webkit-filter: blur(100%);
+    transition-delay: 0.5s;
+    transition-duration: 0.5s;
+}
+img:hover{
+    filter: grayscale(0%);
+    -webkit-filter: blur(0%);
+}
   optgroup{
     background-color: brown;
     color: aliceblue;
@@ -83,17 +100,70 @@ h1{
   nav {
     background-color: brown;
     padding: 10px;
-    text-align: center;
     position: fixed;
     top: 0;
     width: 100%;
     box-shadow: 5px 4px 5px grey;
     z-index: 1000;
+     display: flex;
+    justify-content: space-around;
+    flex-direction: row;
   }
   nav a {
     color: aliceblue;
     text-decoration: none;
-    margin: 0 15px;
     font-size: 20px;
-
   }
+  nav a:hover {
+    color: blueviolet;
+    transition-delay: 0.3s;
+    transition-duration: 0.5s;
+}
+  .p-about{
+    background-color: red;
+    text-align: center;
+    color: white;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    font-size: xx-large;
+    margin-left: 100px;
+    margin-right: 100px;
+    overflow: hidden;
+}
+
+.h2-about{
+    text-align: center;
+    color: blueviolet;
+    font-size: xx-large;
+    padding: 20px;
+    margin: 30px;
+    
+}
+table{
+    padding: 30px;
+    width: 100%;
+    color: #EEE;
+    text-align: center;
+    font-size: large;
+}
+th{
+    border: 2px solid black;
+    padding: 15px;
+    background-color: rgb(13, 14, 14);
+}
+td {
+    background-color: rgb(5, 49, 248);
+    border: 2px solid black;
+    padding: 15px;
+    transition-duration:  2s;
+    transition-delay: 0s;
+    transition-property: background-color, color, text-align;
+}
+td:hover {
+    background-color: rgb(65, 88, 88);
+    color: yellow;
+   text-align: left;
+}
